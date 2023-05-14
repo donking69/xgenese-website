@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xgenese | Contact Us At</title>
+        <style>
+          
+      body{
+        background-image: url(https://static.vecteezy.com/system/protected/files/001/264/262/vecteezy_a-close-up-view-of-a-businessman-holding-a-globe_1264262.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* other styles */
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #17094e;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #06f4f4;
+      }
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+        z-index: -1;
+      } 
+      #video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: #06f4f4;
+      }
+      .search-bar input[type="text"] {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: #f2f2f2;
+        color: #444;
+        width: 100%;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type="text"]:hover,
+      input[type="text"]:focus{
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      .search-bar button {
+        background-color: #06f4f4;
+        color: #fff;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      .search-bar button:hover {
+        background-color: #1ee30c;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"]
+      input[type="message"]{
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: #f2f2f2;
+        color: #444;
+        width: 50%;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      label[for="phone"] {
+        display: block; /* display the label on a new line */
+        margin-top: 1rem; /* add some spacing above the label */
+      }
+      input[type="tel"] {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: #f2f2f2;
+        color: #444;
+        width: 50%; /* set the same width as other input fields */
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type=""] {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: #f2f2f2;
+        color: #444;
+        width: 50%; /* set the same width as other input fields */
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type="text"]:hover,
+      input[type="email"]:hover,
+      input[type="tel"]:hover,
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus {
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      button[type="submit"] {
+      background-color: #06f4f4;
+      color: #fff;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      }
+      button[type="submit"]:hover {
+      background-color: #1ee30c /* change the background color when hovered over */
+      }
+      textarea {
+        resize: none;
+        transition: all 0.5s ease;
+        border-radius: 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        width: 50%;
+        height: 50px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+      textarea:focus {
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      textarea:hover {
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      header {
+        background-color: #fdfcfc00;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-top: 0;
+        color: #17094e;
+      }
+      h2 {
+        font-size: 30px;
+        margin-top: 0;
+        color: #06f4f4;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 0;
+        color: #ffffff;
+      }
+      .container {
+        position: relative;
+      }
+      .container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      footer {
+        background-color: #17094e;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 12px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .social-media-links a {
+        margin-right: 10px;
+      }
+      .header p {
+        margin: 15rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+
+        background-color: #0d091b5b;
+      }.text-3d h1 {
+        text-shadow: -1px -1px 0px #06f4f4, -1.5px -1.5px 0px #06f4f4, -2px -2px 0px #06f4f4;
+      }
+      .text-3d h2 {
+        text-shadow: -1px -1px 0px #17094e, -1.25px -1.25px 0px #17094e, -2px -2px 0px #17094e;
+      }
+      .text-3d p {
+        text-shadow: -1px -1px 0px #17094e, -1.25px -1.25px 0px #17094e, -1.5px -1.5px 0px #17094e;
+      }
+      .text-3d h2 {
+        text-shadow: -1px -1px 0px #030303, -1.5px -1.5px 0px #000000, -2px -2px 0px #000000;
+      } 
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">Xgenese</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Go</button>
+      </div>
+    </nav>
+    <div id="video-background">
+      <video autoplay muted loop>
+        <source src="C:\Users\djkjr\Downloads\background animation for Xgenese website.mp4" frameborder="0" allowfullscreen></source>
+      </video>
+    </div>
+    <header>
+      <div class="text-3d">
+        <h1>Contact Us</h1>
+            <h2>Get in touch with us</h2>
+      <p>Please choose your preferred method of contact:</p>
+         <label for="name">Name:</label>
+    <form>  
+      <input type="text" id="name" name="name" required><br><br>
+    </form>
+      <label for="email">Email:</label>
+    <form>  
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+      <input type="checkbox" id="chat" name="chat" value="chat">
+      <label for="chat">Instant Message Chat</label><br>
+      <input type="checkbox" id="emailContact" name="emailContact" value="emailContact">
+      <label for="emailContact">Email</label><br>
+      <button type="submit">Submit</button>
+    </form>
+    </header>
+    <footer> <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-3d">
+          <h2>Innovative Solutions for Tomorrow</h2>
+          <p>We'd love for you to stay connected with us beyond our website! Follow us on social media to get exclusive content, behind-the-scenes glimpses, and updates on our latest offerings. Join our community and be the first to know about exciting news and events. Don't miss out on the fun, give us a follow today!</p>
+        </div>
+        <div class="col">
+          <div class="text-3d">
+          <h2>Quick Links</h2>
+          <ul class="list-unstyled">
+            <li>Located: United States</li>
+            <li>Phone: +1 (800)Xgenese</li>
+            <li>Email: letuswork4u@xgenese.com</li>
+          </ul>
+        </div>
+        
+        <div class="social-media-links">
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://www.youtube.com/">YouTube</a>
+        </div>
+    </div>
+    <div class="copy-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Xgenese. All Rights Reserved.</p>
+    </footer>
+  </html>

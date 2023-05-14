@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xgenese | Services</title>
+    
+    <style>
+      body {
+        background-image: url(https://static.vecteezy.com/system/protected/files/001/264/262/vecteezy_a-close-up-view-of-a-businessman-holding-a-globe_1264262.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* other styles */
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #17094e;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #06f4f4;
+      }
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+        z-index: -1;
+      }
+  
+      #video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        box-shadow: #06f4f4;
+      }
+      .search-bar input[type="text"] {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        margin-right: 0.5rem;
+      }
+      input[type="text"]:hover,
+      input[type="text"]:focus{
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      .search-bar button {
+        background-color: #06f4f4;
+        color: #fff;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .search-bar button:hover {
+        background-color: #1ee30c;
+      }
+      header {
+        background-color:  #fdfcfc00;
+        margin-top: 0px;
+        text-align: center;
+        z-index: 1;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-top: 0px;
+        color: #17094e;
+      }
+      h2 {
+        font-size: 30px;
+        color: #06f4f4;
+        padding: 2rem;
+        text-align: center;
+      }
+      .container {
+        position: relative;
+      }
+
+      .container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+        .text-3d {
+        position: relative;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+      }
+      
+      h3 {
+        font-size: 30px;
+        color: #06f4f4;
+        padding: 2rem;
+        text-align: center;
+      }
+      h3 {
+        background-color: #fdfcfc00;
+        padding: 2rem;
+        text-align: center;
+      }
+      ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      }
+      footer {
+        background-color: #17094e;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 12px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .social-media-links a {
+        margin-right: 10px;
+      }
+      
+      .my-dive {
+        background-color: #17094e;
+        color: #fff;
+        padding: 50rem;
+        text-align: center;
+        margin-top: 10rem
+      }
+      .my-div p {
+        margin: 15rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: #0d091b5b;
+      }
+      
+      .text-3d h1 {
+        text-shadow: -1px -1px 0px #06f4f4, -1.5px -1.5px 0px #06f4f4, -2px -2px 0px #06f4f4;
+      }
+      .text-3d h2 {
+        text-shadow: -1px -1px 0px #17094e, -1.25px -1.25px 0px #17094e, -2px -2px 0px #17094e;
+      }
+      .text-3d h3 {
+        text-shadow: -1px -1px 0px #030303, -1.5px -1.5px 0px #000000, -2px -2px 0px #000000;
+      }
+      
+
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        
+          <div class="logo">
+            <a href="index.html">Xgenese</a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
+          </div>
+      </nav>
+      <div id="video-background">
+        <video autoplay loop muted>
+          <source src="C:\Users\djkjr\Downloads\background animation for Xgenese website.mp4" frameborder="0" allowfullscreen></source>
+        
+      </div>
+      <div class="text-3d">
+        <h1>Our Services</h1>
+        <h1>Innovative Solutions for Tomorrow</h1>
+      </div>
+    </header>
+    
+    <main>
+      <section>
+        <div class="my-div">
+          <div class="text-3d">
+        <h2>Software Development</h2>
+        <p>Software development is the process of creating software programs, applications, and systems using programming languages, frameworks, and tools. Software development is an important aspect of technology that powers many industries, including finance, healthcare, education, and entertainment.
+          
+          Software development involves several stages, including requirements gathering, design, coding, testing, and maintenance. During the requirements gathering stage, software developers work with clients and stakeholders to understand the needs and goals of the project. This information is used to create a design and plan for the software development project.
+          
+          The coding stage involves writing the code that makes up the software program. This stage involves using programming languages, frameworks, and tools to create the software program according to the design and plan that was created during the requirements gathering stage.
+          
+          Testing is an important stage in software development, which involves checking the software program for bugs and errors. Testing can be automated or done manually, and helps to ensure that the software program works as expected.
+          
+          Finally, software maintenance involves making updates and changes to the software program as needed. This can include fixing bugs, adding new features, or updating the software to work with new technologies.
+          
+          Overall, software development is a complex and important process that requires a high degree of skill and expertise. At your company, we have a team of experienced software developers who can work with clients to create custom software solutions that meet their needs and goals.</p>
+      
+        <h2>Web Development</h2>
+        <p>XGenese is a software development company that specializes in providing high-quality website design services to businesses of all sizes. They use the latest design trends and technologies to create visually appealing websites that are optimized for performance and conversions. Their team of skilled designers can help businesses create user-friendly and responsive websites that are tailored to meet their specific needs. XGenese's website design services can help businesses improve their online presence, attract and engage more visitors, and ultimately increase their revenue. Whether it's designing a brand new website or redesigning an existing one, XGenese's website design services can help businesses achieve their goals and stand out in the competitive online world.</p>
+      
+        <h2>Mobile Development</h2>
+        <p>If you're looking to create engaging and user-friendly mobile applications, our company offers exceptional mobile app design services. Our skilled designers can create mobile apps that provide a seamless user experience across different devices and platforms, covering iOS, Android, and hybrid platforms. We use the latest technologies and design trends to create visually appealing and functional mobile apps that help businesses attract and engage more users. Whether you're looking to create a new mobile app or redesign an existing one, our mobile app design services are tailored to meet your specific needs. By partnering with us, you can create mobile apps that offer superior functionality and performance, ultimately leading to increased user engagement and revenue.</p>
+      
+        <h2>Cloud Solutions</h2>
+        <p>For businesses looking to optimize their IT infrastructure, cloud solutions are a valuable option, and our company offers comprehensive cloud services. Our team of experts can help businesses migrate their data and applications to the cloud, providing a more efficient and scalable solution that is easy to manage. We offer a range of cloud services, including infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS), and can tailor our solutions to meet the specific needs of our clients. Our cloud services provide businesses with increased flexibility, reliability, and security, allowing them to focus on their core operations and scale up or down as needed. By partnering with us for cloud solutions, businesses can benefit from reduced infrastructure costs, increased productivity, and improved agility.</p>
+      
+        <h2>Digital Marketing</h2>
+        <p>For businesses looking to increase their online presence and reach their target audience, digital marketing is a powerful tool, and our company offers a range of digital marketing services to help businesses achieve their marketing goals. Our team of experts can help businesses develop and implement effective digital marketing strategies, including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, email marketing, and more. We use the latest technologies and best practices to create tailored digital marketing campaigns that are designed to attract and engage more users, ultimately leading to increased conversions and revenue. By partnering with us for digital marketing, businesses can benefit from increased brand awareness, improved search engine rankings, and a higher ROI on their marketing spend. We work closely with our clients to understand their unique needs and develop digital marketing solutions that align with their business objectives.</p>
+      >
+        <h2>IT Consulting</h2>
+        <p>If you are looking to optimize their technology infrastructure and improve their IT operations, IT consulting services can be a valuable solution, XGenese offers comprehensive IT consulting services to help businesses achieve their goals. Our team of experienced IT consultants can help businesses assess their current IT infrastructure, identify areas for improvement, and develop customized solutions to address their specific needs. We offer a range of IT consulting services, including IT strategy development, cloud migration and optimization, cybersecurity, data management, and more. Our IT consulting services are designed to provide businesses with increased efficiency, security, and scalability, helping them reduce costs and improve their overall productivity. By partnering with us for IT consulting services, businesses can benefit from access to our expertise and industry insights, enabling them to make informed decisions and stay ahead of the competition.</p>
+      </section>
+    </main>
+    
+    <footer> <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-3d">
+          <h3>Innovative Solutions for Tomorrow</h3>
+          <p>As a growing software development business, we offer a comprehensive range of services designed to help businesses achieve their goals and stay ahead of the competition. Our services span web design, mobile app design, cloud solutions, digital marketing, and IT consulting, providing a wide range of solutions to meet the unique needs of businesses across industries. Our team of experts brings a wealth of experience and industry insights to every project, working closely with clients to develop customized solutions that align with their business objectives. With a focus on innovation, quality, and customer satisfaction, we strive to be a trusted partner for businesses looking to harness the power of technology to achieve success.</p>
+          <p>At Xgenese, we're committed to delivering exceptional services and products to our clients. Our dedicated team works tirelessly to provide the best solutions that meet your needs. Stay updated with our latest offerings and technological advancements by following us on social media. You can also subscribe to our newsletter for exclusive updates, or explore our website to learn more. Just use the links below to connect with us on facebook, Twitter, Intagram, and YouTube</p>
+        </div>
+        <div class="col">
+          <div class="text-3d">
+          <h3>Unmatched Service Excellence</h3>
+          <ul class="list-unstyled">
+            <li>Located: United States</li>
+            <li>Phone: +1 (800)Xgenese</li>
+            <li>Email: letuswork4u@xgenese.com</li>
+          </ul>
+        </div>
+        
+        <div class="social-media-links">
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://www.youtube.com/">YouTube</a>
+        </div>
+    </div>
+    <div class="copy-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Xgenese. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

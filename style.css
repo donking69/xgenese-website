@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  background: none;
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/protected/files/001/264/262/vecteezy_a-close-up-view-of-a-businessman-holding-a-globe_1264262.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  opacity: 100%;
+  color: #fff;
+}
+
+header {
+  background-color: transparent;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#17094e;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #06f4f4;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #f2f2f2;
+  color: #444;
+  width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.search-bar button {
+  background-color: #06f4f4;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-bar button:hover {
+  background-color: #1ee30c;
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  color: #06f4f4; /* change font color */
+}
+
+h1 {
+  font-size: 32px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+}
+button[type="submit"] {
+  background-color: #06f4f4;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #1ee30c;
+}
+
+
+
+
+
+
+
+

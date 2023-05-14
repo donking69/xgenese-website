@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xgenese | Home</title>
+        <style>
+      body{
+        background-image: url(https://static.vecteezy.com/system/protected/files/001/264/262/vecteezy_a-close-up-view-of-a-businessman-holding-a-globe_1264262.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* other styles */
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #17094e;
+        padding: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #06f4f4;
+      }
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+        z-index: -1;
+      }
+  
+      #video-background video {
+        min-width: 100%;
+        min-height:10%;
+        object-fit: cover;
+      }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: #06f4f4;
+      }
+      .search-bar input[type="text"] {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: #f2f2f2;
+        color: #444;
+        width: 100%;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      input[type="text"]:hover,
+      input[type="text"]:focus{
+        box-shadow: 0 0 0 3px #1ee30c;
+        outline: none;
+      }
+      .search-bar button {
+        background-color: #06f4f4;
+        color: #fff;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .search-bar button:hover {
+        background-color: #1ee30c;
+      }
+      header {
+        background-color: #fdfcfc00;
+        padding: 2rem;
+        text-align: center;
+        z-index: 1;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        color: #17094e;
+      }
+      h2 {
+        font-size: 30px;
+        color: #06f4f4;
+        padding: 2rem;
+        text-align: center;
+      }
+      .container {
+        position: relative;
+      }
+
+      .container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+        .text-3d {
+        position: relative;
+        z-index: 1;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 0;
+        color: #ffffff;
+        margin-top: 40px;
+      }
+      footer {
+        background-color: #17094e;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 12px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .social-media-links a {
+        margin-right: 10px;
+      }
+      .my-dive {
+        background-color: #17094e;
+        color: #fff;
+        padding: 50rem;
+        text-align: center;
+        margin-top: 10rem
+      }
+      .my-div p {
+        margin: 15rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: #0d091b5b;
+      }
+      .header p {
+        margin: 15rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+
+        background-color: #0d091b5b;
+      }
+      .text-3d h1 {
+        text-shadow: -1px -1px 0px #06f4f4, -1.5px -1.5px 0px #06f4f4, -2px -2px 0px #06f4f4;
+      }
+      .text-3d h2 {
+        text-shadow: -1px -1px 0px #030303, -1.5px -1.5px 0px #000000, -2px -2px 0px #000000;
+      }
+      nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:hover > .dropdown-menu {
+  display: block;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  padding: 10px 0;
+  background-color: #04001b79;
+  border: 1px solid #ccc;
+  z-index: 2;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 3;
+  pointer-events: none;
+}
+
+nav .dropdown:hover .dropdown-menu {
+  /* Show the dropdown menu when the parent item is hovered over */
+  display: block;
+  /* Set opacity and pointer events to show the menu */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav .dropdown-menu:hover {
+  /* Cancel the transition when the mouse is over the dropdown menu */
+  transition: none;
+}
+
+nav .dropdown-menu li {
+  padding: 10px;
+}
+
+nav .dropdown-menu li:hover {
+  background-color: #04001b46;
+}
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">Xgenese</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="app.html">App Development</a></li>
+              <li><a href="seo.html">SEO</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">Company</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="#our-mission">Our Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="sign-up.html">Sign Up</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit">Go</button>
+        </div>
+      </nav>
+    
+    <div id="video-background">
+        <video autoplay loop muted>
+          <source src="C:\Users\djkjr\Downloads\background animation for Xgenese website.mp4" frameborder="0" allowfullscreen></source>
+    </video>
+    </div>
+      <div class="header">
+        <div class="text-3d">
+      <h1><strong>Welcome to Xgenese</strong></h1>
+      </head>
+      <main>
+        <section>
+          <div class="my-div">
+
+        <p>
+        As a fresh and dynamic software development company, we are dedicated to pushing the limits and breaking new ground to deliver cutting-edge solutions that shape the future. Our focus is on staying ahead of the curve and bringing these innovative solutions to you today.
+
+        At our company, we understand that technology is constantly evolving, and we are committed to keeping up with the latest trends and techniques in software development. Our team of experienced developers is skilled in using the latest programming languages, frameworks, and tools to create custom software solutions that meet the unique needs and goals of each client.
+
+        Our software development process is collaborative and client-focused, starting with a thorough understanding of your business needs and objectives. From there, we work closely with you to create a design and plan for your software development project, ensuring that every step of the process is transparent and efficient.
+
+        Whether you need a simple web application or a complex software system, our team has the skills and expertise to deliver high-quality solutions that meet your needs. We take pride in our ability to deliver software solutions that are innovative, reliable, and scalable, and we are committed to exceeding your expectations every step of the way.
+      </p>
+    </header>
+  </body>
+   <footer> <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text-3d">
+        <h2>Innovative Solutions for Tomorrow</h2>
+        <p>At Xgenese, we're committed to delivering exceptional services and products to our clients. Our dedicated team works tirelessly to provide the best solutions that meet your needs. Stay updated with our latest offerings and technological advancements by following us on social media. You can also subscribe to our newsletter for exclusive updates, or explore our website to learn more. Just use the links below to connect with us on facebook, Twitter, Intagram, and YouTube</p>
+      </div>
+      <div class="col">
+        <div class="text-3d">
+        <h2>Unmatched Service Excellence</h2>
+        <ul class="list-unstyled">
+          <li>Located: United States</li>
+          <li>Phone: +1 (800)Xgenese</li>
+          <li>Email: letuswork4u@xgenese.com</li>
+        </ul>
+      </div>
+      
+      <div class="social-media-links">
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+      </div>
+  </div>
+  <div class="copy-right">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2023 Xgenese. All Rights Reserved.</p>
+  </footer>
+</html>
